@@ -1,0 +1,18 @@
+@import '../../scss/App.scss';
+.container{
+    width: 100%;
+    background-color:  $Primary;
+    height: 100vh;
+    img{
+        width: 11rem;
+        height: 11rem;
+        margin-top: 15rem;
+    }
+    h3{
+        font-size: 36px;
+        color: white;
+        font-weight: 500;
+        margin: 0;
+    }
+   
+}

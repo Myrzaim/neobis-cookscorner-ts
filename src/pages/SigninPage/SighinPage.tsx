@@ -1,15 +1,25 @@
 import React from 'react';
-import styles from './sighin.module.scss';
+import AuthForm from '../../components/authForm/AuthForm';
+import styles from './signin.module.scss';
 
 const SighinPage = () => {
-  return (
-      <div className='container'>
-          <div className='container__welcome'>
-              <p>Welcome Back To CooksCorner</p>
+    return (
+      <div className={styles.container}>
+        <div className={styles.container__welcome}>
+          <div className={styles.container__welcome__block}>
+            <p>
+              Welcome Back To <span>CooksCorner</span>
+            </p>
           </div>
-          <div className='container__form'></div>
-    </div>
-  )
+        </div>
+        <div className={styles.container__form}>
+                <AuthForm />
+                <p className={styles.signup}>
+        I don't have an account? <span>Sign Up Now</span>
+      </p>
+        </div>
+      </div>
+    );
 }
 
 export default SighinPage

@@ -1,0 +1,40 @@
+@import '../../scss/App.scss';
+.container{
+    margin: 0;
+    width: 100%;
+}
+.container__welcome{
+    height: 13rem;
+    background-color: $Primary;
+}
+.container__welcome__block{
+    width: 25rem;
+    margin: auto;
+    padding-top: 2rem;
+    p{
+        margin: 0;
+        font-size: 40px;
+        color: white;
+        font-weight: 300;
+    }
+    span{
+        font-weight: 600;
+    }
+}
+.container__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+.signup{
+    margin-top: 3rem;
+    font-size: 14px;
+    font-weight: 400;
+    span{
+        color: $Primary;
+        font-weight: 500;
+    }
+}

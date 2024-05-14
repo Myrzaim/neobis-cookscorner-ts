@@ -1,0 +1,101 @@
+@import '../../scss/App.scss';
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    position: relative;
+    label{
+        color: $Primary;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        margin-top:1.5rem 
+    }
+    input{
+        background-color: $Input-background;
+        border-radius: 3rem;
+        width: 26rem;
+        height: 1rem;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    button{
+        background-color: $Primary;
+        border-radius: 3rem;
+        width: 28rem;
+        height: 3rem;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 2rem;
+        color:white ;
+    }
+    &__personIcon{
+        width: 1.3rem;
+        height: 1.3rem;
+        position: absolute;
+        z-index: 1;
+        left: 25rem;
+        top: 4rem;
+    }
+    &__gmailIcon{
+        width: 1.3rem;
+        height: 1.3rem;
+        position: absolute;
+        z-index: 1;
+        left: 25rem;
+        top: 10.2rem;
+    }
+    &__novisibleIcon{
+        width: 1.3rem;
+        height: 1.3rem;
+        position: absolute;
+        z-index: 1;
+        left: 25rem;
+        top: 16.4rem; 
+    }
+    &__visibleIcon{
+        width: 1.3rem;
+        height: 1.3rem;
+        position: absolute;
+        z-index: 1;
+        left: 25rem;
+        top: 22.6rem; 
+    }
+    &__errorsName{
+        position: absolute;
+        top: 6rem;
+        margin: 0.2rem 0 0 0.2rem;
+        text-align: left;
+        color: red;
+        font-size: 12px;
+    }
+    &__errorsGmail{
+        position: absolute;
+        top: 12rem;
+        margin: 0.2rem 0 0 0.2rem;
+        text-align: left;
+        color: red;
+        font-size: 12px;
+    }
+    &__errorsPassword{
+        position: absolute;
+        top: 18rem;
+        margin: 0.2rem 0 0 0.2rem;
+        text-align: left;
+        color: red;
+        font-size: 12px;
+    }
+    &__errorsRePassword{
+        position: absolute;
+        top: 24rem;
+        margin: 0.2rem 0 0 0.2rem;
+        text-align: left;
+        color: red;
+        font-size: 12px;
+    }
+}

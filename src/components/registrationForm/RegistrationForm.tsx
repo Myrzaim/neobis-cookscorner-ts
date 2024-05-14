@@ -105,7 +105,7 @@ const RegistrationForm = () => {
         <>
           <input
             type="password"
-            placeholder="Enter your rePassword"
+            placeholder="Enter your Re-Password"
             {...register("rePassword", {
               required: true,
             })}

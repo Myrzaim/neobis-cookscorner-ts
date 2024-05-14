@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import RegistrationForm from "../../components/registrationForm/RegistrationForm";
 import styles from "./registration.module.scss";
 
@@ -14,7 +15,10 @@ const RegistrationPage = () => {
         <div className={styles.container__form}>
           <RegistrationForm />
           <p className={styles.signup}>
-            Already have an account? <span>Sign In Now</span>
+            Already have an account?{" "}
+            <Link to={"/signin"} style={{ textDecoration: "none" }}>
+              <span>Sign In Now</span>
+            </Link>
           </p>
         </div>
       </div>

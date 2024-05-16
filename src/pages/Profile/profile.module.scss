@@ -69,3 +69,59 @@ margin-bottom: 3rem;}
         margin: 0;
     }
 }
+.modalContainer{
+    text-align: center;
+    position: relative;
+    h2{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    svg{
+position: absolute; 
+top: 0.1rem;
+right: -0.5rem;
+    }
+}
+.modalContainer__form{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    position: relative;
+    label{
+        color: $Text-faded;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        margin-top:1.5rem 
+    }
+    input,textarea{
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        width: 26rem;
+        padding: 1rem;
+    }
+    &_name{
+        border-radius: 3rem;
+        height: 1rem;
+        border-color: $Primary;
+       
+    }
+    &_bio{
+        border-radius: 1rem;
+        height: 2.5rem;
+        background-color: #EDEDED;
+        border: none;
+    }
+    button{
+        background-color: $Primary;
+        border-radius: 3rem;
+        width: 28rem;
+        height: 3rem;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 2rem;
+        color:white ;
+    }
+}

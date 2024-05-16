@@ -8,7 +8,6 @@ const HomePage = () => {
     <>
       <div className={styles.container}>
         {/* <Navbar /> */}
-        <div></div>
         <h1>Hi, Sarthak. UI Designer & Cook</h1>
         <Category />
       </div>

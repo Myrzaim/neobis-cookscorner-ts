@@ -8,16 +8,18 @@ import GreetPage from "./pages/GreetPage/GreetPage";
 import HomePage from "./pages/HomePage/HomePage";
 import Profile from "./pages/Profile/Profile";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 import SighinPage from "./pages/SigninPage/SighinPage";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <HomePage /> */}
       {/* <FoodDetail/> */}
       {/* <AuthorPage /> */}
-      <Profile/>
+      <SearchPage/>
+      {/* <Profile/> */}
       {/* <Routes>
         <Route path="/" element={<GreetPage />} />
         <Route path="/signin" element={<SighinPage />} />

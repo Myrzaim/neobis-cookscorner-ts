@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import AuthorPage from "./pages/AuthorPage/AuthorPage";
 import FoodDetail from "./pages/FoodDetailsPage/FoodDetail";
 import GreetPage from "./pages/GreetPage/GreetPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -13,7 +14,8 @@ function App() {
     <div className="App">
       {/* <Navbar /> */}
       {/* <HomePage /> */}
-      <FoodDetail/>
+      {/* <FoodDetail/> */}
+      <AuthorPage />
       {/* <Routes>
         <Route path="/" element={<GreetPage />} />
         <Route path="/signin" element={<SighinPage />} />

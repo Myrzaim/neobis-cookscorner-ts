@@ -1,0 +1,71 @@
+@import "../../scss/App.scss";
+.container{
+    margin: 1rem 2rem;
+    h1{
+    font-size: 24px;
+    font-weight: 500;
+margin-bottom: 3rem;}
+}
+.container__profile{
+    width: 50rem;
+    margin: auto;
+    display: flex;
+    img{
+        margin-right: 2rem;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+    &_info{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        div{
+            margin: 0 1rem;
+        }
+        span{
+        font-size: 24px;
+        font-weight: 500;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    p{
+        color:$Text-faded;
+    }
+    button{
+        background-color: $Secondary;
+        border: none;
+        width: 100%;
+        height: 3rem;
+        color:  $Primary;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 0.7rem;
+    }
+}
+.container__foodCards{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.container__recipe{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 3rem;
+    span{
+        color: #8A8A8A;
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+}

@@ -6,6 +6,7 @@ import AuthorPage from "./pages/AuthorPage/AuthorPage";
 import FoodDetail from "./pages/FoodDetailsPage/FoodDetail";
 import GreetPage from "./pages/GreetPage/GreetPage";
 import HomePage from "./pages/HomePage/HomePage";
+import Profile from "./pages/Profile/Profile";
 import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
 import SighinPage from "./pages/SigninPage/SighinPage";
 
@@ -15,7 +16,8 @@ function App() {
       {/* <Navbar /> */}
       {/* <HomePage /> */}
       {/* <FoodDetail/> */}
-      <AuthorPage />
+      {/* <AuthorPage /> */}
+      <Profile/>
       {/* <Routes>
         <Route path="/" element={<GreetPage />} />
         <Route path="/signin" element={<SighinPage />} />

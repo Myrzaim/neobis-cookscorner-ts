@@ -1,0 +1,29 @@
+.card{
+    position: relative;
+    &__img{
+        border-radius: 1rem;
+        width: 20rem;
+     height: 14rem;
+    }
+    &__info{
+        position: absolute;
+        color: white;
+        top: 8rem;
+        left: 1rem;
+        p{
+            margin:0 0 0.5rem 0;
+            font-size: 12px;
+            font-weight: 400;
+
+        }
+        h3{
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    &__svg{
+        display: flex;
+        align-items: center;
+    }
+}

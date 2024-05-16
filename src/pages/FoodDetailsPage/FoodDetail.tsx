@@ -12,15 +12,15 @@ const FoodDetail = () => {
       </button>
 
         <div className={styles.container__description}>
-          <h1 className={styles.title}>name</h1>
-          <div className={styles.location}>
-            <p>location</p>
+          <h1 className={styles.title}>Ainsley’s Jerk Chicken</h1>
+          
+              <p>by Ainsley Harriott</p>
+              <div className={styles.location}>
+            <img className={styles.locationImg} src={back} alt="location" />
+            <p>min</p>
           </div>
-          <h3>Description</h3>
-          <p>description</p>
           <h3>Rewiews</h3>
 
-          <button className={styles.book_btn}>Book Now</button>
         </div>
       </div>
   );

@@ -1,9 +1,12 @@
 import React, { useState, useRef } from "react";
 import logo from "../../assets/images/logo1.svg";
+import logonotActive from "../../assets/icons/LogoNotActive.svg";
 import home from "../../assets/icons/home.svg";
-import homeNotActive from "../../assets/icons/search.svg";
+import homeNotActive from "../../assets/icons/homeNotActive.svg";
 import search from "../../assets/icons/search.svg";
-import person from "../../assets/icons/personAccount.svg";
+import searchNotActive from "../../assets/icons/searchNotActive.svg";
+import person from "../../assets/icons/presonA.svg";
+import personNotActive from "../../assets/icons/person.svg";
 import exit from "../../assets/icons/exit.svg";
 import styles from "./navbar.module.scss";
 import { Outlet, useNavigate } from "react-router-dom";
@@ -45,7 +48,7 @@ const Navbar = () => {
       <div className={styles.container}>
         <img
           className={styles.container__logo}
-          src={url.split("/")[3] === "" ? logo : search}
+          src={url.split("/")[3] === "" ? logo : logonotActive}
           alt="logo"
         />
         <hr />
@@ -73,7 +76,7 @@ const Navbar = () => {
             >
               <img
                 className={styles.container__block_img}
-                src={search}
+                src={active === "search" ? search : searchNotActive}
                 alt="search"
               />
             </div>
@@ -86,7 +89,7 @@ const Navbar = () => {
             >
               <img
                 className={styles.container__block_img}
-                src={person}
+                src={active === "person" ? person : personNotActive}
                 alt="person"
               />
             </div>

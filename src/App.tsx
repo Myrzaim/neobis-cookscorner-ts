@@ -14,7 +14,7 @@ import SighinPage from "./pages/SigninPage/SighinPage";
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<HomePage />} />
           <Route path="/detail" element={<FoodDetail />} />
@@ -22,16 +22,13 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/profile" element={<Profile />} />
         </Route>
-      </Routes>
-      {/* <FoodDetail/> */}
-      {/* <AuthorPage /> */}
-      {/* <SearchPage /> */}
-      {/* <Profile /> */}
-      {/* <Routes>
+      </Routes> */}
+
+      <Routes>
         <Route path="/" element={<GreetPage />} />
         <Route path="/signin" element={<SighinPage />} />
         <Route path="/signup" element={<RegistrationPage />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }

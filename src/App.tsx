@@ -14,12 +14,19 @@ import SighinPage from "./pages/SigninPage/SighinPage";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      {/* <HomePage /> */}
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<HomePage />} />
+          <Route path="/detail" element={<FoodDetail />} />
+          <Route path="/author" element={<AuthorPage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/profile" element={<Profile />} />
+        </Route>
+      </Routes>
       {/* <FoodDetail/> */}
       {/* <AuthorPage /> */}
-      <SearchPage/>
-      {/* <Profile/> */}
+      {/* <SearchPage /> */}
+      {/* <Profile /> */}
       {/* <Routes>
         <Route path="/" element={<GreetPage />} />
         <Route path="/signin" element={<SighinPage />} />

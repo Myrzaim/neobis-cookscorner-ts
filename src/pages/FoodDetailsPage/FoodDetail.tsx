@@ -3,23 +3,28 @@ import styles from "./foodDetail.module.scss";
 import foodImg from "../../assets/images/foodImg.svg";
 import back from "../../assets/icons/back.svg";
 import time from "../../assets/icons/time.svg";
+import { Link } from "react-router-dom";
 
 const FoodDetail = () => {
+
   return (
     <div className={styles.container}>
-      <img src={foodImg} alt="backimg" />
+      <img src={foodImg} alt="foodimg" />
+      <Link to={'/'}>
       <button className={styles.back__btn}>
         <img src={back} alt="back" />
-      </button>
+        </button>
+        </Link>
 
       <div className={styles.container__description}>
         <h1 className={styles.container__description_title}>
           Ainsley’s Jerk Chicken
         </h1>
-
+<Link to={'/author'}>
         <p className={styles.container__description_author}>
           by Ainsley Harriott
-        </p>
+          </p>
+          </Link>
         <div className={styles.container__description_time}>
           <img src={time} alt="time" />
           <p>20-30 min</p>

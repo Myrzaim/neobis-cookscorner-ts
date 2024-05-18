@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import gmailIcon from "../../assets/icons/email.svg";
 import novisible from "../../assets/icons/visibility_off.svg";
 import visible from "../../assets/icons/visibility.svg";
+import { useNavigate } from "react-router-dom";
 
 interface IFormInput {
   email: string;
@@ -11,6 +12,7 @@ interface IFormInput {
 }
 
 const AuthForm = () => {
+  const navigate = useNavigate();
   const [visibleIcon, setVisibleIcon] = useState(true);
   const {
     register,
@@ -20,6 +22,7 @@ const AuthForm = () => {
 
   const onSubmit = async (data: IFormInput) => {
     console.log(JSON.stringify(data));
+    navigate("/home");
   };
   const handleClickIcon = () => {
     setVisibleIcon(!visibleIcon);

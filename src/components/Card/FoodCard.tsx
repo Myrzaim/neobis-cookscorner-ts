@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./foodCard.module.scss";
 import foodImg from "../../assets/images/food.svg";
+import { Link } from "react-router-dom";
 
 const FoodCard = () => {
   return (
+    <Link to={'/detail'}>
     <div className={styles.card}>
       <img className={styles.card__img} src={foodImg} alt="foodImg" />
       <div className={styles.card__info}>
@@ -46,7 +48,8 @@ const FoodCard = () => {
           <span>118</span>
         </div>
       </div>
-    </div>
+      </div>
+      </Link>
   );
 };
 

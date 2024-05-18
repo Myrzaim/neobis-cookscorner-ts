@@ -27,11 +27,11 @@
     }
 }
 .container__category{
-&_recipe{
+&_active{
 background-color: $Primary;
 color: white;
 }
-&_chefs{
+&_notActive{
     background-color: $Secondary;
     color: black;
 }}

@@ -1,0 +1,42 @@
+@import '../../scss/App.scss';
+.container{
+    padding: 0 1rem;
+    width: 4rem;
+    height: 100vh;
+    background-color: $Input-background;
+    &__logo{
+        margin-top: 1rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    &__blocks{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: $Background;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+    }
+    &__block__click{
+        background-color: $Primary;
+    }
+    &__block__exit{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: $Background;
+        border-radius: 0.5rem;
+        bottom: -1rem;
+        
+    }
+    &__block_img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 1rem;
+    }
+}

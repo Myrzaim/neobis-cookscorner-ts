@@ -23,10 +23,10 @@
         border-radius: 0.5rem;
         margin-top: 1rem;
     }
-    &__block__click{
+    &__click{
         background-color: $Primary;
     }
-    &__block__exit{
+    &__exit{
         width: 3.5rem;
         height: 3.5rem;
         background-color: $Background;
@@ -34,7 +34,7 @@
         bottom: -1rem;
         
     }
-    &__block_img{
+    &__img{
         width: 1.5rem;
         height: 1.5rem;
         margin-top: 1rem;

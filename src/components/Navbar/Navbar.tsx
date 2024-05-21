@@ -9,7 +9,7 @@ import person from "../../assets/icons/presonA.svg";
 import personNotActive from "../../assets/icons/person.svg";
 import exit from "../../assets/icons/exit.svg";
 import styles from "./navbar.module.scss";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import classnames from "classnames";
 
 interface onClickData {
@@ -18,7 +18,7 @@ interface onClickData {
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const url = window.location.href;
+  const url = useLocation().pathname;
 
   const [active, setActive] = useState("home");
 
@@ -55,14 +55,14 @@ const Navbar = () => {
         <div className={styles.container__blocks}>
           <div>
             <div
-              onClick={() => handleClick({ selected: "home" })}
+              onClick={() => handleClick({ selected: "home" })}   
               className={classnames(
                 styles.container__block,
-                active === "home" ? styles.container__block__click : null
+                active === "home" ? styles.container__click : null
               )}
             >
               <img
-                className={styles.container__block_img}
+                className={styles.container__img}
                 src={active === "home" ? home : homeNotActive}
                 alt="home"
               />
@@ -71,11 +71,11 @@ const Navbar = () => {
               onClick={() => handleClick({ selected: "search" })}
               className={classnames(
                 styles.container__block,
-                active === "search" ? styles.container__block__click : null
+                active === "search" ? styles.container__click : null
               )}
             >
               <img
-                className={styles.container__block_img}
+                className={styles.container__img}
                 src={active === "search" ? search : searchNotActive}
                 alt="search"
               />
@@ -84,27 +84,22 @@ const Navbar = () => {
               onClick={() => handleClick({ selected: "person" })}
               className={classnames(
                 styles.container__block,
-                active === "person" ? styles.container__block__click : null
+                active === "person" ? styles.container__click : null
               )}
             >
               <img
-                className={styles.container__block_img}
+                className={styles.container__img}
                 src={active === "person" ? person : personNotActive}
                 alt="person"
               />
             </div>
           </div>
 
-          <div className={styles.container__block__exit}>
-            <img
-              className={styles.container__block_img}
-              src={exit}
-              alt="exit"
-            />
+          <div className={styles.container__exit}>
+            <img className={styles.container__img} src={exit} alt="exit" />
           </div>
         </div>
       </div>
-      <Outlet />
     </>
   );
 };

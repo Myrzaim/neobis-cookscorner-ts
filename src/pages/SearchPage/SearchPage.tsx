@@ -18,8 +18,8 @@ const SearchPage = () => {
         <button
           className={
             active === "chef"
-              ? styles.container__category_active
-              : styles.container__category_notActive
+              ? styles.container__active
+              : styles.container__notActive
           }
           onClick={() => handleClick({ selected: "chef" })}
         >
@@ -28,8 +28,8 @@ const SearchPage = () => {
         <button
           className={
             active === "recipe"
-              ? styles.container__category_active
-              : styles.container__category_notActive
+            ? styles.container__active
+            : styles.container__notActive
           }
           onClick={() => handleClick({ selected: "recipe" })}
         >

@@ -6,7 +6,7 @@
     img{
         width: 100%;
             }
-    .back__btn{
+    &__btn{
     border: none;
        padding: 1.1rem 2rem;
        background-color: transparent;
@@ -21,69 +21,69 @@
         font-weight: 500;
         margin-bottom: 1rem;
     }
-}
-  
- .container__description{
-    text-align: left;
-    margin: 2rem 6rem;
-    margin-top: 2rem;
-        &_title{
-            font-size: 24px;
-            font-weight: 500;
-        }
-        &_author{
-            font-size: 14px;
-            font-weight: 400;
-            color: $Text-faded;
-        }
-        &_time{
-            display: flex;
-            align-items: center;
-            img{
-                width: 1rem!important;
-                height: 1rem !important;
-                margin-right: 0.5rem;
+    &__description{
+        text-align: left;
+        margin: 2rem 6rem;
+        margin-top: 2rem;
             }
-            p{
-                color: $Primary;
-                font-size: 16px;
-                font-weight: 400;
-            }
+    &__title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__author{
+        font-size: 14px;
+        font-weight: 400;
+        color: $Text-faded;
+    }
+    &__time{
+        display: flex;
+        align-items: center;
+        img{
+            width: 1rem!important;
+            height: 1rem !important;
+            margin-right: 0.5rem;
         }
-       
-        &_level{
-            padding: 0.4rem;
-            background-color: $Secondary;
-            border: none;
-            border-radius: 0.9rem;
-            font-size: 14px;
-            font-weight: 400;
-        }
-        &_svg{
-            margin-top: 2rem;
-            display: flex;
-            align-items: center;
-            span{
-                font-size: 14px;
-                font-weight: 400;
-                margin-left: 0.5rem;
-                margin-right: 1rem;
-            }
-        }
-        &_text{
+        p{
+            color: $Primary;
             font-size: 16px;
             font-weight: 400;
-                       
-        }
-        &_ingredients{
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
-            font-weight: 400;
-            border-bottom: 1px solid $Input-background;
-            margin-bottom: 0.5rem;
         }
     }
+    &__level{
+        padding: 0.4rem;
+        background-color: $Secondary;
+        border: none;
+        border-radius: 0.9rem;
+        font-size: 14px;
+        font-weight: 400;
+    }
+     
+    &__svg{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+                   
+    }
+    &__ingredients{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 400;
+        border-bottom: 1px solid $Input-background;
+        margin-bottom: 0.5rem;
+    }
+}
+
    
  
     

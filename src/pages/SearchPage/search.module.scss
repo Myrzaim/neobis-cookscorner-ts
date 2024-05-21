@@ -1,6 +1,6 @@
 @import '../../scss/App.scss';
 .container{
-    width: 100%;
+  
     margin: 1rem 2rem;
     text-align: center;
     height: 100vh;
@@ -25,46 +25,46 @@
             font-weight: 500;            
         }
     }
+    &__active{
+        background-color: $Primary;
+        color: white;
+        }
+    &__notActive{
+        background-color: $Secondary;
+        color: black;
+        }
+        &__search{
+            margin-top: 1rem;
+        width: 100%;
+        background-color: $Input-background;
+        border-radius: 2rem;
+        input{
+            width: 90%;
+            border: none;
+            background-color: $Input-background;
+            padding: 1rem;
+            color: $Text-faded;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        }
+        &__add{
+            background-color: $Primary;
+            width: 30rem;
+            border: none;
+            padding: 1rem;
+            border-radius: 2rem;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            svg{
+                margin-right: 1rem;
+            }
+        }
 }
-.container__category{
-&_active{
-background-color: $Primary;
-color: white;
-}
-&_notActive{
-    background-color: $Secondary;
-    color: black;
-}}
 
-.container__search{
-    margin-top: 1rem;
-width: 100%;
-background-color: $Input-background;
-border-radius: 2rem;
-input{
-    width: 90%;
-    border: none;
-    background-color: $Input-background;
-    padding: 1rem;
-    color: $Text-faded;
-    font-size: 16px;
-    font-weight: 400;
-}
-}
-.container__add{
-    background-color: $Primary;
-    width: 30rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 2rem;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    svg{
-        margin-right: 1rem;
-    }
-}
+

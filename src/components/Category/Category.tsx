@@ -20,7 +20,7 @@ const Category = () => {
       <h3>Category</h3>
       <Box sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
-          <Box >
+          <Box>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
               {categories.map((category) => (
                 <Tab

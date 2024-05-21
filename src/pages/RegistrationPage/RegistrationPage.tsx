@@ -7,14 +7,14 @@ const RegistrationPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.container__welcome}>
-        <div className={styles.container__welcome__block}>
+        <div className={styles.container__block}>
           <p>
             Sign up for delicious<span> Discoveries!</span>
           </p>
         </div>
         <div className={styles.container__form}>
           <RegistrationForm />
-          <p className={styles.signup}>
+          <p className={styles.container__signup}>
             Already have an account?{" "}
             <Link to={"/signin"} style={{ textDecoration: "none" }}>
               <span>Sign In Now</span>

@@ -11,27 +11,27 @@ const FoodDetail = () => {
     <div className={styles.container}>
       <img src={foodImg} alt="foodimg" />
       <Link to={'/'}>
-      <button className={styles.back__btn}>
+      <button className={styles.container__btn}>
         <img src={back} alt="back" />
         </button>
         </Link>
 
       <div className={styles.container__description}>
-        <h1 className={styles.container__description_title}>
+        <h1 className={styles.container__title}>
           Ainsley’s Jerk Chicken
         </h1>
 <Link to={'/author'}>
-        <p className={styles.container__description_author}>
+        <p className={styles.container__author}>
           by Ainsley Harriott
           </p>
           </Link>
-        <div className={styles.container__description_time}>
+        <div className={styles.container__time}>
           <img src={time} alt="time" />
           <p>20-30 min</p>
         </div>
-        <span className={styles.container__description_level}>easy</span>
+        <span className={styles.container__level}>easy</span>
 
-        <div className={styles.container__description_svg}>
+        <div className={styles.container__svg}>
           <svg
             width="32"
             height="32"
@@ -67,7 +67,7 @@ const FoodDetail = () => {
           </svg>
         </div>
         <h5>Description</h5>
-        <p className={styles.container__description_text}>
+        <p className={styles.container__text}>
           You pick up your palette knife and then work that into. Give your meat
           a good old rub. That’s it, nice and hot, hot and spicy meat. He-he
           boy...You pick up your palette knife and then work that into. Give
@@ -77,11 +77,11 @@ const FoodDetail = () => {
           meat. He-he boy...
         </p>
               <h5>Ingredients</h5>
-              <div className={styles.container__description_ingredients}>
+              <div className={styles.container__ingredients}>
                   <span>Chicken</span>
                   <span>1kg</span>
               </div>
-              <div className={styles.container__description_ingredients}>
+              <div className={styles.container__ingredients}>
                   <span>Chicken</span>
                   <span>1kg</span>
               </div>
